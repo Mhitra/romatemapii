@@ -18,7 +18,7 @@ import multer from "multer";
  * @returns {Promise} - Returns a promise that resolves to the saved exercise object.
 */
 export async function addExercise(req, res) {
-  const { patientId, doctorId, exerciseId, startDate, endDate, status } = req.body;
+  const { patientId, doctorId, exerciseId, startDate, endDate, status , catagory} = req.body;
 
   const newExercise = new PatientExercises({
     PatientID: patientId,
@@ -27,6 +27,7 @@ export async function addExercise(req, res) {
     StartDate: new Date(startDate),
     EndDate: new Date(endDate),
     Status: status,
+    Catagory: catagory
   });
 
 

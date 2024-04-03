@@ -26,6 +26,9 @@ const Exercises = Schema({
     type: [String],
     required: true,
   },
+  Catagory: {
+    type: String,
+  },
   requiredEquipment: {
     type: [String],
     required: true,
