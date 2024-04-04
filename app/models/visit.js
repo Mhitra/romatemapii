@@ -11,6 +11,6 @@ const VisitSchema = new Schema({
   notes: String,
 });
 
-const Visit = mongoose.model('Visit', VisitSchema);
+const Visit = model('Visit', VisitSchema);
 
 export default Visit;
