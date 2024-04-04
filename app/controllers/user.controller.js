@@ -229,7 +229,7 @@ export const getallcases = async (req, res) => {
     
       // Add the exercises to the visit
       for (let exercise of exercises) {
-        const newExercise = new Exercise(exercise);
+        const newExercise = new Exercises(exercise);
         await newExercise.save();
         visit.exercises.push(newExercise);
       }
